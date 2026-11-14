@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Botón de música -->
+    <button id="musicButton" class="music-button" aria-label="Reproducir música">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" fill="currentColor"/>
+        </svg>
+    </button>
+
+    <!-- Audio de fondo -->
+    <audio id="backgroundMusic" loop preload="auto">
+        <source src="media/rockola.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="card-container">
+        <!-- Panel izquierdo: Cinta de película -->
+        <div class="film-strip">
+            <div class="film-strip-content">
+                <div class="image-slide">
+                    <img src="images/aleja1.jpg" alt="Foto 1" class="gallery-image" data-message="Tienes una sonrisa que hace que todo sea mejor">
+                </div>
+                <div class="image-slide">
+                    <img src="images/aleja2.jpg" alt="Foto 2" class="gallery-image" data-message="Qué suerte la mía de haber coincidido contigo">
+                </div>
+                <div class="image-slide">
+                    <img src="images/aleja3.jpg" alt="Foto 3" class="gallery-image" data-message="Hay algo en tu mirada que siempre me hace sonreír">
+                </div>
+                <div class="image-slide">
+                    <img src="images/aleja4.jpg" alt="Foto 4" class="gallery-image" data-message="Eres bonita de tantas formas que una foto no alcanza">
+                </div>
+                <div class="image-slide">
+                    <img src="images/aleja5.jpg" alt="Foto 5" class="gallery-image" data-message="Tu compañía hace especial hasta el momento más sencillo">
+                </div>
+                <div class="image-slide">
+                    <img src="images/aleja6.jpg" alt="Foto 6" class="gallery-image" data-message="Ojalá pudieras verte alguna vez con mis ojos para que veas por que te admiro tanto">
+                </div>
+                <div class="image-slide">
+                    <img src="images/aleja7.jpg" alt="Foto 7" class="gallery-image" data-message="Tienes esa forma tan tuya de hacer que todo se sienta mejor">
+                </div>
+                <div class="image-slide">
+                    <img src="images/aleja8.jpg" alt="Foto 8" class="gallery-image" data-message="De todas las cosas bonitas de la vida, tú eres una de mis favoritas">
+                </div>
+                <div class="image-slide">
+                    <img src="images/aleja9.jpg" alt="Foto 9" class="gallery-image" data-message="No sé qué me gusta más, si tu sonrisa o la felicidad de provocarla">
+                </div>
+                <div class="image-slide">
+                    <img src="images/aleja10.jpg" alt="Foto 10" class="gallery-image" data-message="Qué bonito que hayas nacido y que la vida me haya permitido conocerte">
+                </div>
+
+
+
+
+                <!-- Duplicado para animación infinita -->
+                <div class="image-slide">
+                    <img src="images/aleja1.jpg" alt="Foto 1" class="gallery-image" data-message="Tienes una sonrisa que hace que todo sea mejor">
+                </div>
+                <div class="image-slide">
+                    <img src="images/aleja2.jpg" alt="Foto 2" class="gallery-image" data-message="Qué suerte la mía de haber coincidido contigo">
+                </div>
+                <div class="image-slide">
+                    <img src="images/aleja3.jpg" alt="Foto 3" class="gallery-image" data-message="Hay algo en tu mirada que siempre me hace sonreír">
+                </div>
+                <div class="image-slide">
+                    <img src="images/aleja4.jpg" alt="Foto 4" class="gallery-image" data-message="Eres bonita de tantas formas que una foto no alcanza">
+                </div>
+                <div class="image-slide">
+                    <img src="images/aleja5.jpg" alt="Foto 5" class="gallery-image" data-message="Tu compañía hace especial hasta el momento más sencillo">
+                </div>
+                <div class="image-slide">
+                    <img src="images/aleja6.jpg" alt="Foto 6" class="gallery-image" data-message="Ojalá pudieras verte alguna vez con mis ojos para que veas por que te admiro tanto">
+                </div>
+                <div class="image-slide">
+                    <img src="images/aleja7.jpg" alt="Foto 7" class="gallery-image" data-message="Tienes esa forma tan tuya de hacer que todo se sienta mejor">
+                </div>
+                <div class="image-slide">
+                    <img src="images/aleja8.jpg" alt="Foto 8" class="gallery-image" data-message="De todas las cosas bonitas de la vida, tú eres una de mis favoritas">
+                </div>
+                <div class="image-slide">
+                    <img src="images/aleja9.jpg" alt="Foto 9" class="gallery-image" data-message="No sé qué me gusta más, si tu sonrisa o la felicidad de provocarla">
+                </div>
+                <div class="image-slide">
+                    <img src="images/aleja10.jpg" alt="Foto 10" class="gallery-image" data-message="Qué bonito que hayas nacido y que la vida me haya permitido conocerte">
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel derecho: Contenido de texto -->
+        <div class="text-panel">
+            <!-- Decoración superior -->
+            <div class="decoration-top">
+                <svg width="80" height="40" viewBox="0 0 80 40">
+                    <path d="M 10 20 Q 20 10, 30 20 T 50 20 T 70 20" stroke="#000" stroke-width="2" fill="none"/>
+                    <circle cx="40" cy="20" r="3" fill="#000"/>
+                </svg>
+            </div>
+
+            <!-- Mensaje personalizado -->
+            <div class="personal-message">
+                <p class="script-text">Para la persona más linda de mi vida...</p>
+            </div>
+
+            <!-- Mensaje principal -->
+            <div class="main-message">
+                <p>Hay fechas que son especiales por lo que representan, y para mí, el 14 de noviembre es una de ellas. No solo porque hoy celebras un año más de vida, sino porque en un día como este llegó al mundo alguien que, sin saberlo, haría que mi vida fuera mucho más bonita.</p>
+                <br/>
+                <p>Hoy celebro la fortuna de que existas, de haber coincidido contigo y de encontrar en tu compañía una felicidad tan especial. Celebro que a tu lado puedo sentirme más vivo, que tu sonrisa me inspira a hacer hasta lo impensable por verte feliz y que, muchas veces, una de mis mayores satisfacciones es algo tan sencillo como poder mirarte.</p>
+                <br/>
+                <p>Hoy le agradezco a la vida por haberte traído a este mundo, por permitirme conocerte y por regalarme la oportunidad de escribirte estas palabras con tanto cariño.</p>
+                <br/>
+                <p>Deseo que este nuevo año te regale tantos motivos para sonreír como los que tú, sin darte cuenta, me has regalado a mí. Que nunca te falten sueños por cumplir, momentos que te hagan feliz y personas que te recuerden lo valiosa que eres.</p>
+                <br/>
+                <p>¿Quieres que te cuente un par de secretos? toca en cada imagen, siempre hay algo para decirte.</p>
+            </div>
+
+            <!-- Cierre -->
+            <p class="script-text closing">Feliz cumpleaños cielo.</p>
+
+            <!-- Decoración inferior -->
+            <div class="decoration-bottom">
+                <svg width="80" height="40" viewBox="0 0 80 40">
+                    <path d="M 10 20 Q 20 30, 30 20 T 50 20 T 70 20" stroke="#000" stroke-width="2" fill="none"/>
+                    <circle cx="40" cy="20" r="3" fill="#000"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-text-panel">
+                <div class="decoration-top">
+                    <svg width="60" height="30" viewBox="0 0 80 40">
+                        <path d="M 10 20 Q 20 10, 30 20 T 50 20 T 70 20" stroke="#000" stroke-width="2" fill="none"/>
+                        <circle cx="40" cy="20" r="3" fill="#000"/>
+                    </svg>
+                </div>
+                <p id="modalMessage" class="modal-message"></p>
+                <div class="decoration-bottom">
+                    <svg width="60" height="30" viewBox="0 0 80 40">
+                        <path d="M 10 20 Q 20 30, 30 20 T 50 20 T 70 20" stroke="#000" stroke-width="2" fill="none"/>
+                        <circle cx="40" cy="20" r="3" fill="#000"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
